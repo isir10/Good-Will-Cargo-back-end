@@ -13,11 +13,13 @@
 ActiveRecord::Schema[7.0].define(version: 2022_12_04_160535) do
   create_table "cargo_ships", force: :cascade do |t|
     t.string "name"
+    t.string "current_location"
     t.string "destination"
     t.string "img_url"
     t.date "leaving_date"
     t.integer "rate_per_cargo"
     t.integer "capacity"
+    t.integer "remaining"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
