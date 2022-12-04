@@ -32,6 +32,8 @@ group :development do
   gem 'foreman', '~> 0.87'
 end
 
+gem "faker"
+
 gem "pg"
 
 gem "active_model_serializers", "~> 0.10.12"
