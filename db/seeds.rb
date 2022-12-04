@@ -18,5 +18,16 @@ cargo_ship_img_urls = ["https://i.ibb.co/SmxWwy7/Whats-App-Image-2022-12-04-at-1
 "https://i.ibb.co/Z6qC968/Whats-App-Image-2022-12-04-at-18-51-37-1.jpg",
 "https://i.ibb.co/QXYkSvC/Whats-App-Image-2022-12-04-at-18-51-37.jpg"]
 
+
+
 cargo_ship_img_urls.length.times do |i|
+    CargoShip.create(name: "#{Faker::Ancient.titan} #{Faker::Name.middle_name}", 
+        current_location:Faker::Address.city, 
+        destination:Faker::Address.city, 
+        leaving_date:Faker::Date.forward,
+        rate_per_cargo:(600000..1500000).to_a.sample,
+        img_url: cargo_ship_img_urls[-i],
+        capacity: (10000..21000).to_a.sample,
+        remaining: (300..700).to_a.sample
+    )
 end
