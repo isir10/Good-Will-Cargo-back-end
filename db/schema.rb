@@ -12,7 +12,6 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_12_04_160535) do
   create_table "cargo_ships", force: :cascade do |t|
-    t.string "ship_name"
     t.string "name"
     t.string "destination"
     t.string "img_url"
