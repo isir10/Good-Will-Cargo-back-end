@@ -1,10 +1,10 @@
 class CargoShipsController < ApplicationController
 rescue_from ActiveRecord::RecordNotFound, with: :record_not_found_method
     def index
-        render json: CargoShips.all
+        render json: CargoShip.all
     end
     def show
-        render json: CargoShips.find(params[:id])
+        render json: CargoShip.find(params[:id])
     end
     private
     def record_not_found_method
