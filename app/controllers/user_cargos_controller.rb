@@ -7,7 +7,10 @@ class UserCargosController < ApplicationController
         render json: {cargo: userCargo, cargo_ships: cargo_ships}
     end
 
-    def
+    def update
+        cargo_ship = UserCargo.find(params[:id])
+        cargo_ship.update!(cargo_ship_params)
+        render json: cargo_ship, status: :accepted
     end
     
     private
