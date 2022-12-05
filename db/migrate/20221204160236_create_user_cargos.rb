@@ -4,7 +4,7 @@ class CreateUserCargos < ActiveRecord::Migration[7.0]
       t.integer :count
       t.integer :amount
       t.integer :user_id
-      t.integer :cargo_ship
+      t.integer :cargo_ship_id
 
       t.timestamps
     end

@@ -28,7 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_12_04_160535) do
     t.integer "count"
     t.integer "amount"
     t.integer "user_id"
-    t.integer "cargo_ship"
+    t.integer "cargo_ship_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
