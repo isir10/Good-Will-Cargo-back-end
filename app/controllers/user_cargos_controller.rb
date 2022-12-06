@@ -8,8 +8,8 @@ class UserCargosController < ApplicationController
     end
 
     def create
-        user_cargo = UserCargo.create!(user_id: session[:user_id], cargo_ship_id: params[:cargo_ship_id], count: params[:count], params[:amount])
-        render json: {cargo: user_cargo}, status: :created
+        user_cargo = UserCargo.create!(user_id: session[:user_id], cargo_ship_id: params[:cargo_ship_id], count: params[:count], amount: params[:amount])
+        render json: user_cargo, status: :created
     end
 
     def update
