@@ -2,7 +2,7 @@ class UserCargosController < ApplicationController
     before_action :authorize
     def index
         user  = User.find(session[:user_id]) 
-        userCargo = user.userCargos
+        userCargo = user.user_cargos
         cargo_ships = user.cargo_ships
         render json: {cargo: userCargo, cargo_ships: cargo_ships}
     end
