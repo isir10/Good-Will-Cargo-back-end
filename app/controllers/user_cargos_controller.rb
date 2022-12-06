@@ -4,7 +4,7 @@ class UserCargosController < ApplicationController
         user  = User.find(session[:user_id]) 
         userCargo = user.user_cargos
         cargo_ships = user.cargo_ships
-        render json: {cargo: userCargo, cargo_ships: cargo_ships}
+        render json: userCargo
     end
 
     def create
