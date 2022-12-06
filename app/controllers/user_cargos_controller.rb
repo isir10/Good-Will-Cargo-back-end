@@ -20,7 +20,7 @@ class UserCargosController < ApplicationController
     end
 
     def destroy
-        cargo_ship = UserCargo.find_by!(id: params[:id], user_id: params[:user_id])
+        cargo_ship = UserCargo.find_by!(id: params[:id], user_id: session[:user_id])
         cargo_ship.destroy
         head :no_content
     end
