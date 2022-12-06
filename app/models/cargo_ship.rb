@@ -1,0 +1,2 @@
+class CargoShip < ApplicationRecord
+end
