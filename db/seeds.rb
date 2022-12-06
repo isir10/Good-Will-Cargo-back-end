@@ -34,3 +34,5 @@ end
 
 User.create(username: "Test", password: "Test", password_confirmation: "Test", email: "test@email.com
     ", bio: "Test", img_url: "https://i.ibb.co/L8KFvtS/Whats-App-Image-2022-12-04-at-18-51-39.jpg")
+
+User.first.user_cargos.create(user_id: 1, cargo_ship_id: 1)
