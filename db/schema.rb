@@ -10,7 +10,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_06_063619) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_06_065425) do
+  create_table "cargo_ships", force: :cascade do |t|
+    t.string "name"
+    t.string "img_url"
+    t.string "destination"
+    t.date "leaving_date"
+    t.integer "rate_per_cargo_ships"
+    t.integer "capacity"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "user_cargos", force: :cascade do |t|
+    t.integer "count"
+    t.integer "amount"
+    t.integer "user_id"
+    t.integer "cargo_ship_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "users", force: :cascade do |t|
     t.string "username"
     t.string "email"

@@ -5,12 +5,9 @@ class CreateCargoShips < ActiveRecord::Migration[7.0]
       t.string :img_url
       t.string :destination
       t.date :leaving_date
-      t.integer :rate_per cargo_ships
+      t.integer :rate_per_cargo_ships
       t.integer :capacity
-      
-      
-
-
+  
       t.timestamps
     end
   end
