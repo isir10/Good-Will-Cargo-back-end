@@ -1,6 +1,6 @@
 class UserCargosController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :record_not_found_method
-    before_action :authorize
+    before_action :authorized
     def index
         user  = User.find(session[:user_id]) 
         userCargo = user.user_cargos
@@ -25,9 +25,6 @@ class UserCargosController < ApplicationController
         head :no_content
     end
     private
-    def authorize
-        return render json: {errors: ["Not authorized"]}, status: :unauthorized unless session.include? :user_id
-    end
     def record_not_found_method
         render json: { error: "Cargo Not Found" }, status: :not_found
     end
