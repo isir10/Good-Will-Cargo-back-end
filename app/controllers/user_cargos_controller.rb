@@ -10,14 +10,18 @@ class UserCargosController < ApplicationController
 
     def create
         user_id = decoded_token[0]['user_id']
-        user_cargo = UserCargo.create!(user_id: user_id, cargo_ship_id: params[:cargo_ship_id], count: params[:count], amount: params[:amount])
+        cargo_amount = CargoShip.find(params[:cargo_ship_id]).rate_per_cargo
+        total_amount = cargo_amount * params[:count]
+        user_cargo = UserCargo.create!(user_id: user_id, cargo_ship_id: params[:cargo_ship_id], count: params[:count], amount: total_amount)
         render json: user_cargo, status: :created
     end
 
     def update
         user_id = decoded_token[0]['user_id']
         cargo_ship = UserCargo.find_by!(id: params[:id], user_id: user_id)
-        cargo_ship.update!(cargo_ship_params)
+        cargo_amount = CargoShip.find(params[:cargo_ship_id]).rate_per_cargo
+        total_amount = cargo_amount * params[:count]
+        cargo_ship.update!(count: params[:count], amount: total_amount)
         render json: cargo_ship, status: :accepted
     end
 
