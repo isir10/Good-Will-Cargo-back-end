@@ -1,0 +1,2 @@
+class UserCargoController < ApplicationController
+end
