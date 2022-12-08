@@ -1,2 +1,0 @@
-class UserCargoController < ApplicationController
-end
