@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   post "/login", to: "jwt#create"
   delete "/logout", to: "jwt#destroy"
   get "/me", to: "users#show"
+  delete "/me", to: "users#destroy"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
