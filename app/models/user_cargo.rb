@@ -5,8 +5,8 @@ class UserCargo < ApplicationRecord
     belongs_to :user
     belongs_to :cargo_ship
     def count_range
-        if(count > 0){
+        if count > 0
             errors.add(:count, "must be greater than 0")
-        }
+        end 
     end
 end
