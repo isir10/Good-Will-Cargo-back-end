@@ -31,6 +31,5 @@ cargo_ship_img_urls.length.times do |i|
         remaining: (300..700).to_a.sample
     )
 end
-
 User.create(username: "Test", password: "Test", password_confirmation: "Test", email: "test@email.com
     ", bio: "Test", img_url: "https://i.ibb.co/L8KFvtS/Whats-App-Image-2022-12-04-at-18-51-39.jpg")
