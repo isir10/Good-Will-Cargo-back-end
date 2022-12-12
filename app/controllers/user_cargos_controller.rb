@@ -2,8 +2,7 @@ class UserCargosController < ApplicationController
     rescue_from ActiveRecord::RecordNotFound, with: :record_not_found_method
     before_action :authorized
     def index
-        user_id = decoded_token[0]['user_id']
-        user = User.find(user_id)
+        user = current_user
         userCargo = user.user_cargos
         render json: userCargo
     end

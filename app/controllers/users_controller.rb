@@ -14,21 +14,18 @@ class UsersController < ApplicationController
     end
 
     def show
-        user_id = decoded_token[0]['user_id']
-        user = User.find(user_id)
+        user = current_user
         render json: user
     end
 
     def update
-        user_id = decoded_token[0]['user_id']
-        user = User.find(user_id)
+        user = current_user
         user.update!(user_params)
         render json: user, status: :accepted
     end
 
     def destroy
-        user_id = decoded_token[0]['user_id']
-        user = User.find(user_id)
+        user = current_user
         user.destroy
         head :no_content
     end
