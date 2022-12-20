@@ -1,22 +1,24 @@
-cargo_ship_img_urls = ["https://i.ibb.co/SmxWwy7/Whats-App-Image-2022-12-04-at-18-51-40-1.jpg",
-"https://i.ibb.co/zGVNt6Y/Whats-App-Image-2022-12-04-at-18-51-40.jpg",
-"https://i.ibb.co/bJNgNw0/Whats-App-Image-2022-12-04-at-18-51-39-2.jpg",
-"https://i.ibb.co/HpZvZYG/Whats-App-Image-2022-12-04-at-18-51-39-1.jpg",
-"https://i.ibb.co/L8KFvtS/Whats-App-Image-2022-12-04-at-18-51-39.jpg" ,
-"https://i.ibb.co/jvMRj3k/Whats-App-Image-2022-12-04-at-18-51-38-2.jpg",
-"https://i.ibb.co/kMSR4H9/Whats-App-Image-2022-12-04-at-18-51-36-2.jpg",
-"https://i.ibb.co/rGY8SrD/Whats-App-Image-2022-12-04-at-18-51-36-1.jpg",
-"https://i.ibb.co/KwCbXVy/Whats-App-Image-2022-12-04-at-18-51-36.jpg" ,
-"https://i.ibb.co/rZ4Gpxn/Whats-App-Image-2022-12-04-at-18-51-35-1.jpg",
-"https://i.ibb.co/1v8H8XX/Whats-App-Image-2022-12-04-at-18-51-35.jpg",
-"https://i.ibb.co/GtyrVcy/Whats-App-Image-2022-12-04-at-18-51-34.jpg",
-"https://i.ibb.co/cXmkbqG/Whats-App-Image-2022-12-04-at-18-51-32.jpg",
-"https://i.ibb.co/bvLq4Md/Whats-App-Image-2022-12-04-at-18-51-31.jpg", 
-"https://i.ibb.co/5LmPV5g/Whats-App-Image-2022-12-04-at-18-51-38-1.jpg",
-"https://i.ibb.co/HFVWKS2/Whats-App-Image-2022-12-04-at-18-51-38.jpg",
-"https://i.ibb.co/wWkXjLq/Whats-App-Image-2022-12-04-at-18-51-37-2.jpg",
-"https://i.ibb.co/Z6qC968/Whats-App-Image-2022-12-04-at-18-51-37-1.jpg",
-"https://i.ibb.co/QXYkSvC/Whats-App-Image-2022-12-04-at-18-51-37.jpg"]
+cargo_ship_img_urls = [
+    "https://i.postimg.cc/h4T8N083/Whats-App-Image-2022-12-04-at-18-51-31.jpg",
+    "https://i.postimg.cc/zBWWZJhR/Whats-App-Image-2022-12-04-at-18-51-32.jpg",
+    "https://i.postimg.cc/0jsS9LGX/Whats-App-Image-2022-12-04-at-18-51-34.jpg",
+    "https://i.postimg.cc/KjDMjJJG/Whats-App-Image-2022-12-04-at-18-51-35.jpg",
+    "https://i.postimg.cc/446tWxZD/Whats-App-Image-2022-12-04-at-18-51-36.jpg",
+    "https://i.postimg.cc/3J9GHfk9/Whats-App-Image-2022-12-04-at-18-51-37.jpg",
+    "https://i.postimg.cc/qvR3Bcnr/Whats-App-Image-2022-12-04-at-18-51-38.jpg",
+    "https://i.postimg.cc/kX7SzPgB/Whats-App-Image-2022-12-04-at-18-51-39.jpg",
+    "https://i.postimg.cc/SxvznX7M/Whats-App-Image-2022-12-04-at-18-51-40.jpg",
+    "https://i.postimg.cc/pLbL4DZk/Whats-App-Image-2022-12-04-at-18-51-35-1.jpg",
+    "https://i.postimg.cc/4x6xgm2G/Whats-App-Image-2022-12-04-at-18-51-36-1.jpg",
+    "https://i.postimg.cc/YStqqMTW/Whats-App-Image-2022-12-04-at-18-51-36-2.jpg",
+    "https://i.postimg.cc/3w9rkzHb/Whats-App-Image-2022-12-04-at-18-51-37-1.jpg",
+    "https://i.postimg.cc/PxxXYKXf/Whats-App-Image-2022-12-04-at-18-51-37-2.jpg",
+    "https://i.postimg.cc/DZM2gs0r/Whats-App-Image-2022-12-04-at-18-51-38-1.jpg",
+    "https://i.postimg.cc/668RNfrN/Whats-App-Image-2022-12-04-at-18-51-38-2.jpg",
+    "https://i.postimg.cc/RC2tCJdJ/Whats-App-Image-2022-12-04-at-18-51-39-1.jpg",
+    "https://i.postimg.cc/nc7DXVSR/Whats-App-Image-2022-12-04-at-18-51-39-2.jpg",
+    "https://i.postimg.cc/YCHmYcJp/Whats-App-Image-2022-12-04-at-18-51-40-1.jpg"
+    ]
 
 
 
